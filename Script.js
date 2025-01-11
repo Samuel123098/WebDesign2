@@ -1,8 +1,24 @@
-// Script.js
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    toggleMenu();
+    setTimeout(() => {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.body.style.transition = "background-color 0.5s ease";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }, 100); // Adjust the delay time as needed
+  }
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+    document.body.style.backgroundColor = "white";
+    setTimeout(() => {
+        toggleMenu();
+    }, 350); // Adjust the delay time as needed
 
-// This function will run when the document is fully loaded
-document.addEventListener('DOMContentLoaded', (event) => {
-    console.log('Document is fully loaded and parsed');
-    
-    // Your code here
-});
+  }
+
+  function toggleMenu() {
+    const menuIcon = document.getElementById("menuIcon");
+    menuIcon.classList.toggle("change");
+  }
