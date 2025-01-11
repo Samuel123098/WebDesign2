@@ -2,7 +2,7 @@
 function openNav() {
     toggleMenu();
     setTimeout(() => {
-        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav").style.width = "300px";
         document.body.style.transition = "background-color 0.5s ease";
         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }, 100); // Adjust the delay time as needed
