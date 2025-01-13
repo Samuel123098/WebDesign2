@@ -32,7 +32,7 @@ import './Design.css';
         <div id="mySidenav" className="sidenav">
           <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
           <a href="https://sambsx.com/">Home page</a>
-          <a href="./CodingLan3.html">Coding Languages</a>
+          <a href="./CodingLan.html">Coding Languages</a>
           <a href="https://github.com/Samuel123098">Github</a>
           <a href="https://leetcode.com/u/SamSBx/">LeetCode</a>
           <a href="#">Animals</a>
