@@ -5,13 +5,13 @@ import Computlan from './pages/ComputLan.jsx'
 export default function App(){
     return(
         <div>
-            <HashRouter>
+            <BrowserRouter>
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path="/Home" element={<Home />} />
                     <Route path="/CodingLan" element={<Computlan />} />
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </div>
     )
 

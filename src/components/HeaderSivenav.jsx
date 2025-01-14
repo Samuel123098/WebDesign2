@@ -15,6 +15,9 @@ function toggleMenu() {
         }, 100); // Adj§ust the delay time as needed
       };
     
+      const Refresh = () => {
+        window.location.reload();
+      };
 
     const closeNav = () => {
       document.getElementById("mySidenav").style.width = "0px";
@@ -29,7 +32,7 @@ function toggleMenu() {
         <div id="mySidenav" className="sidenav">
           <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
           <a href="https://sambsx.com/">Home page</a>
-          <a href="/CodingLan">Coding Languages</a>
+          <Link to="/CodingLan" onClick={Refresh}>Coding Languages</Link>
           <a href="https://github.com/Samuel123098">Github</a>
           <a href="https://leetcode.com/u/SamSBx/">LeetCode</a>
           <a href="#">Animals</a>
