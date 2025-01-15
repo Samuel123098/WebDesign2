@@ -26,18 +26,20 @@ function toggleMenu() {
       }, 350); // Adjust the delay time as needed
     };
 
-      const navigate = useNavigate();
-      const handleRedirect = (path) => {
-        navigate(path, { replace: true });
-        window.location.reload();
-      };
+    const handleReload = (event) => {
+      event.preventDefault(); // Prevent immediate navigation
+      const target = event.target.getAttribute('href'); // Get the target path
+      setTimeout(() => {
+        window.location.href = target; // Navigate to the target and reload
+      }, 0); // Small delay to allow navigation
+    };
 
     return (
       <div>
         <div id="mySidenav" className="sidenav">
           <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
           <a href="https://sambsx.com/">Home page</a>
-          <a onClick={() => handleRedirect('/CodingLan')}>CodingLan</a>
+          <Link to="/CodingLan" onClick={handleReload}>Coding Lang</Link>
           <a href="https://github.com/Samuel123098">Github</a>
           <a href="https://leetcode.com/u/SamSBx/">LeetCode</a>
           <a href="#">Animals</a>
