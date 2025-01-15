@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function toggleMenu() {
     const menuIcon = document.getElementById("menuIcon");
@@ -12,12 +14,9 @@ function toggleMenu() {
             document.getElementById("mySidenav").style.width = "300px";
             document.body.style.transition = "background-color 0.5s ease";
             document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }, 100); // Adj§ust the delay time as needed
+        }, 100); // Adjust the delay time as needed
       };
     
-      const Refresh = () => {
-        window.location.reload();
-      };
 
     const closeNav = () => {
       document.getElementById("mySidenav").style.width = "0px";
@@ -27,12 +26,18 @@ function toggleMenu() {
       }, 350); // Adjust the delay time as needed
     };
 
+      const navigate = useNavigate();
+      const handleRedirect = (path) => {
+        navigate(path, { replace: true });
+        window.location.reload();
+      };
+
     return (
       <div>
         <div id="mySidenav" className="sidenav">
           <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
           <a href="https://sambsx.com/">Home page</a>
-          <Link to="/CodingLan" onClick={Refresh}>Coding Languages</Link>
+          <a onClick={() => handleRedirect('/CodingLan')}>CodingLan</a>
           <a href="https://github.com/Samuel123098">Github</a>
           <a href="https://leetcode.com/u/SamSBx/">LeetCode</a>
           <a href="#">Animals</a>
