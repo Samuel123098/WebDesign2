@@ -39,7 +39,7 @@ function toggleMenu() {
         <div id="mySidenav" className="sidenav">
           <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
           <a href="https://sambsx.com/">Home page</a>
-          <Link to="/CodingLan" onClick={handleReload}>Coding Lang</Link>
+          <a href="/CodingLan">Coding Lang</a>
           <a href="https://github.com/Samuel123098">Github</a>
           <a href="https://leetcode.com/u/SamSBx/">LeetCode</a>
           <a href="#">Animals</a>
