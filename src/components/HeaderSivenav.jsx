@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 function toggleMenu() {
     const menuIcon = document.getElementById("menuIcon");
@@ -12,38 +10,37 @@ function toggleMenu() {
         toggleMenu();
         setTimeout(() => {
             document.getElementById("mySidenav").style.width = "300px";
-            document.body.style.transition = "background-color 0.5s ease";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            document.getElementById("overlay").style.display = "grid";
+            setTimeout(() => {
+              document.getElementById("overlay").style.transition = "background-color 0.5s ease";
+              document.getElementById("overlay").style.backgroundColor = "rgba(0,0,0,0.4)";
+              }, 10);
+
         }, 100); // Adjust the delay time as needed
       };
     
 
     const closeNav = () => {
       document.getElementById("mySidenav").style.width = "0px";
-      document.body.style.backgroundColor = "white";
+      document.getElementById("overlay").style.backgroundColor = "rgba(0,0,0,0)";
+      setTimeout(() => {
+        document.getElementById("overlay").style.display = "none";
+      }, 500);
       setTimeout(() => {
           toggleMenu();
-      }, 350); // Adjust the delay time as needed
-    };
-
-    const handleReload = (event) => {
-      event.preventDefault(); // Prevent immediate navigation
-      const target = event.target.getAttribute('href'); // Get the target path
-      setTimeout(() => {
-        window.location.href = target; // Navigate to the target and reload
-      }, 0); // Small delay to allow navigation
+      }, 360); // Adjust the delay time as needed
     };
 
     return (
       <div>
         <div id="mySidenav" className="sidenav">
           <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
-          <a href="https://sambsx.com/">Home page</a>
+          <a href="/Home">Home page</a>
           <a href="/CodingLan">Coding Lang</a>
           <a href="https://github.com/Samuel123098">Github</a>
           <a href="https://leetcode.com/u/SamSBx/">LeetCode</a>
-          <a href="#">Animals</a>
-          <a href="#">Credit</a>
+          <a href="/Animal">Animals</a>
+          <a href="/Credit">Credit</a>
         </div>
         <div className="banner">
           <a href="https://sambsx.com/">
@@ -55,9 +52,11 @@ function toggleMenu() {
               <div className="bar2"></div>  
               <div className="bar3"></div>
             </div>
+            <div id="overlay"></div>
           </div>
         </div>
       </div>
+
     );
   }
 

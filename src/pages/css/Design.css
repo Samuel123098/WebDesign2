@@ -8,7 +8,7 @@
 /* Set default font and background color for the body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
 }
@@ -75,7 +75,7 @@ img {
     color: #fff;
     padding: 1px;
     text-align: center;
-    opacity: 0.95;
+    opacity: 99.99%;
   }
 
 /* The side navigation menu */
@@ -91,7 +91,19 @@ img {
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
-  
+  #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  }
+
   /* The navigation menu links */
   .sidenav a {
     white-space: nowrap;
