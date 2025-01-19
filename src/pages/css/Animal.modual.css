@@ -2,3 +2,34 @@ h1 {
 color: aliceblue;
 
 }
+.Animalcolumn h1, .Animalcolumn h2 {
+    text-align: center;
+}
+
+.Animals {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create a 2 by 2 grid */
+    gap: 50px; /* Add gap between items */
+    padding: 0 4px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media (max-width: 600px) {
+    .Animals {
+        grid-template-columns: 1fr; /* Change to a 1 by 1 grid */
+    }
+}
+
+.Animalcolumn {
+    padding: 0 4px;
+    margin-top: 50px; /* Add gap at the top */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.Animalcolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+}
