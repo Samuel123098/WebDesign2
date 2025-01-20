@@ -1,4 +1,4 @@
-@font-face { font-family: BAP; src: url('/Bright Almond Personal Use Only.ttf'); } 
+@font-face { font-family: BAP; src: url('/Lovely Bubbles.ttf'); } 
 .junebug { font-family: BAP; font-size: 8em; }
 
 /* Reset some default browser styles */
@@ -10,8 +10,8 @@
 
 /* Set default font and background color for the body */
 body {
-    font-family: BAP, sans-serif;
-    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #838383;
     color: #333;
     line-height: 1.6;
 }
@@ -30,6 +30,7 @@ p {
 a {
     color: #3498db;
     text-decoration: none;
+    font-family: BAP;
 }
 
 a:hover {
@@ -79,7 +80,7 @@ img {
     padding: 1px;
     text-align: center;
     opacity: 99.99%;
-
+    box-shadow: #111 0px 0px 10px;
 
   }
 

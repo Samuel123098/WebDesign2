@@ -14,7 +14,7 @@ function toggleMenu() {
             setTimeout(() => {
               document.getElementById("overlay").style.transition = "background-color 0.5s ease";
               document.getElementById("overlay").style.backgroundColor = "rgba(0,0,0,0.4)";
-              }, 10);
+              }, 50);
 
         }, 100); // Adjust the delay time as needed
       };

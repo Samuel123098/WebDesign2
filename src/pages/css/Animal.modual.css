@@ -1,9 +1,12 @@
+
+
 h1 {
 color: aliceblue;
 
 }
 .Animalcolumn h1, .Animalcolumn h2 {
     text-align: center;
+    font-family: BAP;
 }
 
 .Animals {
@@ -13,6 +16,7 @@ color: aliceblue;
     padding: 0 4px;
     margin-left: 50px;
     margin-right: 50px;
+    overflow-y: hidden;
 }
 @media (max-width: 600px) {
     .Animals {
