@@ -1,4 +1,4 @@
-@font-face { font-family: BAP; src: url('src/Fonts/Bright Almond Personal Use Only.ttf'); } 
+@font-face { font-family: BAP; src: url('/Bright Almond Personal Use Only.ttf'); } 
 .junebug { font-family: BAP; font-size: 8em; }
 
 /* Reset some default browser styles */
