@@ -13,7 +13,7 @@ export default function Animal() {
                         <h2>Owner: Sam (me)</h2>
                 </div>
                 <div className="Animalcolumn">
-                    <img src="https://i.imgur.com/iJBIJDa.jpeg1330352798507729008/Bruce.jpeg" height={"auto"} width={"300px"} ></img>
+                    <img src="https://i.imgur.com/iJBIJDa.jpeg" height={"auto"} width={"300px"} ></img>
                         <h1>Bruce</h1>
                         <h2>Owner: Chloe</h2>
                 </div>
