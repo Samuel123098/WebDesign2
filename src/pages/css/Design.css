@@ -127,6 +127,7 @@ img {
   
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
+    font-family: Arial, sans-serif;
     position: absolute;
     top: 0;
     right: 25px;
