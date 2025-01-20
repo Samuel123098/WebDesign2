@@ -1,3 +1,6 @@
+@font-face { font-family: BAP; src: url('src/Fonts/Bright Almond Personal Use Only.ttf'); } 
+.junebug { font-family: BAP; font-size: 8em; }
+
 /* Reset some default browser styles */
 * {
     margin: 0;
@@ -7,7 +10,7 @@
 
 /* Set default font and background color for the body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: BAP, sans-serif;
     background-color: #ffffff;
     color: #333;
     line-height: 1.6;
