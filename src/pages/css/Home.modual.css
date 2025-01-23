@@ -1,14 +1,16 @@
 @font-face { font-family: LemonDays; src: url('/Lemon Days.ttf'); } 
 
-
 .Homepage h1{
     color: rgb(255, 255, 255);
     font-family: LemonDays, sans-serif;
     text-align: center;
-    margin-top: 15vh;
-    font-size: 100px;
-    border:large;
+    margin-top: 5vh;
+    font-size: 5vh;
+    border-width: 3px;
+    border-style: solid;
+    border: green;
 }
+
 .Homepage img{
     height: 150%;
     width: auto;
@@ -18,4 +20,10 @@
     transform: translateX(-50%);
     z-index: -1;
     overflow: hidden;
+
+}
+
+.Homepagebackground{
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
 }
