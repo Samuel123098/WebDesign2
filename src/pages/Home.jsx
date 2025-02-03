@@ -7,7 +7,9 @@ export default function Home() {
         <div className="Homepage">
             <Navi />
             <img src="/black-and-white-geometric-plexus-line-pattern-design-with-transparent-triangles-abstract-polygonal-futuristic-concept-vector.jpg" className="Homepagebackground"></img>
-            <h1></h1>
+            <div className="Headertest">
+                <h1>Hello</h1>
+                </div>
         </div>
         </>
     );

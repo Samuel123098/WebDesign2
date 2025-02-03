@@ -3,7 +3,11 @@ import "./css/Animal.modual.css"
 import AnimalCard from "../components/AnimalCard.jsx";
 
 export default function Animal() {
-     document.body.style.backgroundColor = "#191919"
+    const BackgroundAnimal = getComputedStyle(document.documentElement).getPropertyValue("--BackgroundAnimal");
+    document.body.style.background = BackgroundAnimal;
+    document.body.style.backgroundSize = "200% 200%";
+    document.body.style.animation = "gradient 15s ease infinite";
+
 
     return (
         <>

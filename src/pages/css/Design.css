@@ -1,10 +1,27 @@
-/* Coolors Exported Palette - https://coolors.co/191308-322a26-454b66-677db7-9ca3db */
-/* SCSS HEX */
-/* SCSS Gradient */
-
-/*# sourceMappingURL=Design.css.map */
 @font-face { font-family: BAP; src: url('/Lovely Bubbles.ttf'); } 
 .junebug { font-family: BAP; font-size: 8em; }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* variables.css */
+:root { 
+  --primary: #2d2327ff;
+  --secondary: #45364bff;
+  --body: #c89f9cff;
+  --textMain: #c97c5dff;
+  --textSec: #b36a5eff;
+
+  --BackgroundAnimal: linear-gradient(-45deg,var(--primary), var(--textMain), var(--textSec),var(--body), var(--secondary));
+}
 
 /* Reset some default browser styles */
 * {
@@ -77,15 +94,17 @@ img {
 }
 
 .banner {
+    position: fixed;
     display: flex;
     height: 40px;
-    background-color: smoky-black;
+    background-color: var(--primary);
     color: #fff;
     padding: 1px;
     text-align: center;
     opacity: 99.99%;
-    box-shadow: #111 0px 0px 10px;
-
+    box-shadow: var(--secondary) 0px 0px 10px;
+    z-index: 1;
+    width: 100%;
   }
 
 /* The side navigation menu */
@@ -93,7 +112,7 @@ img {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 2; /* Stay on top */
     top: 0; /* Stay at the top */
     right: 0;
     background-color: #111; /* Black*/
