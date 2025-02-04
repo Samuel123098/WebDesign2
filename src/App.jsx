@@ -1,8 +1,8 @@
 import { BrowserRouter,Routes ,Route, HashRouter } from "react-router-dom"
-import Home from './pages/Home.jsx'
-import Computlan from './pages/ComputLan.jsx'
-import Animal from './pages/Animal.jsx'
-import Credit from './pages/Credit.jsx'
+import Home from './pages/Home/Home.jsx'
+import Computlan from './pages/ComputLan/ComputLan.jsx'
+import Animal from './pages/Animal/Animal.jsx'
+import Credit from './pages/Credit/Credit.jsx'
 
 
 export default function App(){

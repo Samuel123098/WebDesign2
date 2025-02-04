@@ -1,0 +1,12 @@
+.computlan .welcome{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #008cff;
+}
+.computlan .python{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffdd00;
+}

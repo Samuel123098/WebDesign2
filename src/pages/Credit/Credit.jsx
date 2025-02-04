@@ -1,4 +1,4 @@
-import Navi from "../components/HeaderSivenav.jsx";
+import Navi from "../../components/HeaderSivenav.jsx";
 
 export default function Credit() {
     return (

@@ -1,5 +1,5 @@
-import Navi from "../components/HeaderSivenav.jsx";
-import "./css/Home.modual.css"
+import Navi from "../../components/HeaderSivenav.jsx";
+import "./Home.modual.css"
 
 export default function Home() {
     return (

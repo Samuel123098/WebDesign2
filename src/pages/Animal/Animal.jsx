@@ -1,6 +1,6 @@
-import Navi from "../components/HeaderSivenav.jsx";
-import "./css/Animal.modual.css"
-import AnimalCard from "../components/AnimalCard.jsx";
+import Navi from "../../components/HeaderSivenav.jsx";
+import "./Animal.modual.css"
+import AnimalCard from "../../components/AnimalCard.jsx";
 
 export default function Animal() {
     const BackgroundAnimal = getComputedStyle(document.documentElement).getPropertyValue("--BackgroundAnimal");
