@@ -7,13 +7,18 @@ export default function ComputLan() {
             <Navi />
             <h>Computerlan page</h>
             <div className="computlan">
-                <div className="welcome">
+                <div className="welcome"> 
                     <h1>Test</h1>
                 </div>
                 <div className="python">
                     <h1>
                         Python
                     </h1>
+                </div>
+                <div className="Htmlcss">
+                <h1>
+                        html+css
+                </h1>
                 </div>
             </div>
         </>
