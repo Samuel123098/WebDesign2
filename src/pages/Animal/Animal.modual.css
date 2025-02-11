@@ -10,7 +10,7 @@ color: var(--textMain);
 .Animalcolumn h1, .Animalcolumn h2 {
     text-align: center;
     font-family: BAP;
-    text-shadow: var(--primary) 0px 0px 10px;
+    text-shadow: var(--TheColour) 0px 1px 3px;
     margin-top: 5px;
 }
 
