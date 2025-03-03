@@ -1,4 +1,5 @@
 import React from 'react';
+import '../pages/css/HeaderSidnav.css';
 
 function toggleMenu() {
     const menuIcon = document.getElementById("menuIcon");

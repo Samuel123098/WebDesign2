@@ -3,11 +3,12 @@ import Home from './pages/Home/Home.jsx'
 import Computlan from './pages/ComputLan/ComputLan.jsx'
 import Animal from './pages/Animal/Animal.jsx'
 import Credit from './pages/Credit/Credit.jsx'
-
+import { Gettheme } from './components/ThemeChanger.jsx'
 
 export default function App(){
     return(
         <div>
+       
             <BrowserRouter>
                 <Routes>
                     <Route index element={<Home />} />
@@ -17,6 +18,7 @@ export default function App(){
                     <Route path="/Credit" element={<Credit />} />
                 </Routes>
             </BrowserRouter>
+            {Gettheme()}
         </div>
     )
 
